@@ -188,7 +188,7 @@ class MysterySkull extends Entity{
 			$this->item_eid = Entity::$entityCount++;
 			
 			$pk  = new AddItemEntityPacket;
-			$pk->entityRuntimeId = $this->item_eid;
+			$pk->entityRuntimeId = $this->item_id;
 			$pk->item = $data[0];
 			$pk->position = $this->ftp->asVector3();
 			
